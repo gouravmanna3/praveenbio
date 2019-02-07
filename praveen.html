@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<h1>Praveen</h1>
+<a href="about.html" class="button"  style="position:absolute;right:317px;top:25px;">About</a>
+<a href="contactus.html" class="button"  style="position:absolute;right:160px;top:25px;">Contact Us</a>
+<a href="login2.html" class="button"  style="position:absolute;right:25px;top:25px;">Log Out</a>
+<br><br><br><br><br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="3.jpg" style="width:100%">
+  <div class="text1"><b>Elegant</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="2.jpg" style="width:100%">
+  <div class="text2"><b>Kindness</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="4.jpg" style="width:100%">
+  <div class="text3"><b>Simplicity</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="5.jpg" style="width:100%">
+  <div class="text4"><b>Muscular</b></div>
+</div>
+
+</div>
+<br>
+<br><br><br><br><br><br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<iframe src="intro.html" height="250" width="300"  style="border:2px solid grey"></iframe>
+<iframe src="right.html" height="250" width="1042"  style="border:2px solid grey;overflow:hidden;"></iframe>
+
+<div class="header">
+  <h3>Album</h3>
+  <p><u>Check out some coolest pictures of Praveen</u></p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="praveen1.jpg" style="width:100%">
+    <img src="praveen5.jpg" style="width:100%">
+    <img src="praveen3.jpg" style="width:100%">
+ <img src="praveen13.jpg" style="width:100%">   
+  </div>
+  <div class="column">
+    <img src="praveen9.jpg" style="width:100%">
+    <img src="praveen4.jpg" style="width:100%">
+    <img src="praveen8.jpeg" style="width:100%">
+  <img src="praveen14.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="praveen7.jpg" style="width:100%">
+    <img src="praveen6.jpg" style="width:100%">
+    <img src="praveen2.jpg" style="width:100%">
+  <img src="praveen15.jpg" style="width:100%">
+   </div>
+ <div class="column">
+    <img src="praveen12.jpeg" style="width:100%">
+    <img src="praveen11.jpg" style="width:100%">
+    <img src="praveen10.jpeg" style="width:100%">
+   </div>
+</div><br>
+<iframe src="socialmedia.html" height="270" width="100%" ></iframe>
+</body>
+</html>
